@@ -3,66 +3,234 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Hotseat — Coming Soon</title>
-<meta name="description" content="Hotseat is coming. Take a seat." />
+<title>Hotseat — Trial Presentation & Hot Seat Operator | Courtroom Technology, NYC</title>
+<meta name="description" content="Hotseat puts a seasoned trial technician at counsel's table: courtroom evidence presentation, litigation animation, deposition video, and 3D exhibits that juries understand. New York City." />
+<link rel="canonical" href="https://kyanabeckles.github.io/hotseat-website/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Hotseat — Trial Presentation & Hot Seat Operator | NYC" />
+<meta property="og:description" content="Courtroom evidence presentation, litigation animation, and 3D exhibits that juries understand. Your evidence, on screen, without a hitch." />
+<meta property="og:url" content="https://kyanabeckles.github.io/hotseat-website/" />
+<meta property="og:image" content="https://i.vimeocdn.com/video/501109841_640.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Hotseat",
+  "description": "Trial presentation and courtroom hot seat services: evidence display, litigation animation, deposition video playback, and 3D exhibits for legal teams.",
+  "url": "https://kyanabeckles.github.io/hotseat-website/",
+  "areaServed": { "@type": "Place", "name": "New York City" },
+  "knowsAbout": ["trial presentation", "hot seat operator", "litigation animation", "3D legal exhibits", "deposition designations", "courtroom technology"],
+  "founder": { "@type": "Person", "name": "David A. Johnson", "url": "https://www.davidajohnson.nyc/" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a hot seat operator in a trial?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A hot seat operator (trial technician) sits with the legal team in the courtroom and runs the technology during trial: instantly displaying exhibits, playing deposition video, highlighting documents, and cueing animations the moment counsel asks — so the presentation never stalls in front of the jury." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do litigation teams use trial presentation animation?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Jurors retain visual explanations far better than verbal ones. Litigation animation turns depositions, site evidence, and expert testimony into one clear visual narrative — how a machine works, how an accident happened, how contamination spread — so a non-technical jury understands it the first time." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is courtroom animation admissible as evidence?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Demonstrative animations are routinely admitted when they fairly and accurately illustrate admitted evidence or expert opinion. Accuracy, timing, and a defensible basis in the record are what make an exhibit survive objection — which is why we build every frame from depositions, photographs, maps, and expert input." }
+    },
+    {
+      "@type": "Question",
+      "name": "When should we bring in trial technology support?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Earlier than you think. Exhibits, designations, and animations built weeks before trial survive challenges better and cost less than rush work. Ideally, involve your hot seat team when the pretrial order and exhibit lists start taking shape." }
+    }
+  ]
+}
+</script>
+
 <style>
+  :root {
+    --bg: #0d0d0f;
+    --panel: #16161a;
+    --ink: #f5f2ee;
+    --muted: #b9b2ab;
+    --dim: #6e675f;
+    --ember: #ff7a3c;
+    --ember-deep: #ff3d14;
+    --line: #26262c;
+  }
   * { box-sizing: border-box; margin: 0; }
-  body {
-    min-height: 100vh;
-    display: flex; align-items: center; justify-content: center;
-    background: #0d0d0f;
-    color: #f5f2ee;
-    font-family: 'Inter', system-ui, sans-serif;
-    overflow: hidden;
-  }
-  .glow {
-    position: fixed; inset: auto;
-    bottom: -40vh; left: 50%; transform: translateX(-50%);
-    width: 120vw; height: 80vh;
-    background: radial-gradient(ellipse at center, rgba(255,90,20,.28), rgba(255,45,10,.12) 45%, transparent 70%);
-    pointer-events: none;
-  }
-  main { text-align: center; padding: 32px; position: relative; }
-  .seat { font-size: 3rem; margin-bottom: 8px; }
-  h1 {
-    font-family: 'Archivo Black', system-ui, sans-serif;
-    font-size: clamp(3.2rem, 14vw, 9rem);
-    line-height: .95;
-    letter-spacing: -.02em;
-    text-transform: uppercase;
-    background: linear-gradient(180deg, #fff 30%, #ff7a3c 75%, #ff3d14);
-    -webkit-background-clip: text; background-clip: text;
-    -webkit-text-fill-color: transparent; color: transparent;
-  }
-  p.tag { margin-top: 18px; font-size: 1.15rem; color: #b9b2ab; }
-  .soon {
-    display: inline-block; margin-top: 34px;
-    border: 1px solid rgba(255,122,60,.5); color: #ff7a3c;
-    padding: 10px 26px; border-radius: 999px;
-    font-size: .85rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase;
-  }
-  footer {
-    position: fixed; bottom: 22px; left: 0; right: 0;
-    text-align: center; font-size: .8rem; color: #6e675f;
-  }
-  footer a { color: #b9b2ab; text-decoration: none; }
-  footer a:hover { color: #ff7a3c; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; line-height: 1.65; }
+  h1, h2, h3, .display { font-family: 'Archivo Black', system-ui, sans-serif; letter-spacing: -.01em; }
+  a { color: var(--ember); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+
+  header.site { padding: 20px 0; border-bottom: 1px solid var(--line); }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: 'Archivo Black'; font-size: 1.15rem; text-transform: uppercase; }
+  .brand span { color: var(--ember); }
+  .nav-cta { background: var(--ember-deep); color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 8px; font-weight: 600; font-size: .9rem; }
+  .nav-cta:hover { background: #d63210; }
+
+  .hero { padding: 76px 0 56px; position: relative; overflow: hidden; }
+  .hero .glow { position: absolute; bottom: -60%; left: 50%; transform: translateX(-50%); width: 120%; height: 100%; background: radial-gradient(ellipse at center, rgba(255,90,20,.22), transparent 65%); pointer-events: none; }
+  .kicker { color: var(--ember); text-transform: uppercase; letter-spacing: .2em; font-size: .78rem; font-weight: 600; margin-bottom: 14px; }
+  .hero h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); line-height: 1.05; text-transform: uppercase; max-width: 18ch; }
+  .hero h1 em { font-style: normal; background: linear-gradient(180deg, #fff 25%, var(--ember) 70%, var(--ember-deep)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero p.lede { margin-top: 22px; font-size: 1.15rem; color: var(--muted); max-width: 56ch; }
+  .cta-row { margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn { display: inline-block; text-decoration: none; font-weight: 600; border-radius: 10px; padding: 14px 28px; }
+  .btn-primary { background: var(--ember-deep); color: #fff; }
+  .btn-primary:hover { background: #d63210; }
+  .btn-ghost { border: 1.5px solid var(--line); color: var(--ink); }
+  .btn-ghost:hover { border-color: var(--ember); }
+
+  section { padding: 64px 0; }
+  section h2 { font-size: clamp(1.5rem, 3.5vw, 2.1rem); text-transform: uppercase; margin-bottom: 16px; }
+  .answer-box { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--ember); border-radius: 12px; padding: 26px 30px; }
+  .answer-box p { color: var(--muted); }
+  .answer-box strong { color: var(--ink); }
+
+  .video-frame { position: relative; padding-top: 56.25%; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: #000; }
+  .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .caption { margin-top: 14px; font-size: .9rem; color: var(--dim); }
+  .caption a { color: var(--muted); }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-top: 30px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 24px; }
+  .card h3 { font-size: 1rem; text-transform: uppercase; margin-bottom: 10px; color: var(--ember); }
+  .card p { font-size: .93rem; color: var(--muted); }
+
+  .faq details { border-bottom: 1px solid var(--line); padding: 18px 0; }
+  .faq summary { cursor: pointer; font-weight: 600; font-size: 1.02rem; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+  .faq summary::after { content: "+"; color: var(--ember); font-family: 'Archivo Black'; }
+  .faq details[open] summary::after { content: "–"; }
+  .faq details p { margin-top: 12px; color: var(--muted); max-width: 70ch; }
+
+  .contact { text-align: center; background: var(--panel); border-top: 1px solid var(--line); }
+  .contact p { color: var(--muted); max-width: 52ch; margin: 0 auto 26px; }
+
+  footer { padding: 28px 0; font-size: .82rem; color: var(--dim); border-top: 1px solid var(--line); }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--ember); }
 </style>
 </head>
 <body>
-  <div class="glow" aria-hidden="true"></div>
-  <main>
-    <div class="seat" aria-hidden="true">🔥</div>
-    <h1>Hotseat</h1>
-    <p class="tag">Something's heating up. Take a seat — we'll be ready soon.</p>
-    <span class="soon">Coming Soon</span>
-  </main>
-  <footer>
-    © 2026 Hotseat · <a href="mailto:email@leverageassessments.com">Get in touch</a>
-  </footer>
+
+<header class="site">
+  <div class="wrap">
+    <div class="brand">Hot<span>seat</span></div>
+    <a class="nav-cta" href="https://www.davidajohnson.nyc/#contact">Book a Consult</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="glow" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="kicker">Trial Presentation · Courtroom Technology · NYC</p>
+      <h1>Your evidence, on screen, <em>without a hitch.</em></h1>
+      <p class="lede">Hotseat puts a seasoned trial technician and visual-evidence studio at counsel's table — exhibits called up in seconds, deposition video cued to the line, and litigation animations a jury understands the first time.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://www.davidajohnson.nyc/#contact">Discuss Your Case</a>
+        <a class="btn btn-ghost" href="#work">See the Work</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="what">
+    <div class="wrap">
+      <h2>What is a trial "hot seat"?</h2>
+      <div class="answer-box">
+        <p><strong>The hot seat is the technology chair at counsel's table.</strong> The operator sitting in it runs everything the jury sees: exhibits displayed on demand, documents highlighted line-by-line, deposition clips played at the exact designation, and animations cued to expert testimony — in real time, under courtroom pressure, without stalling your examination. Hotseat combines that operator role with the studio that builds the visuals themselves.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <h2>Evidence a jury can see</h2>
+      <p style="color:var(--muted); max-width:64ch; margin-bottom:26px;">Featured: an accident reconstruction built for litigation — witness depositions, overhead maps, and site photographs synthesized into one coherent visual narrative, giving jurors a consistent spatial understanding of how it happened.</p>
+      <div class="video-frame">
+        <iframe src="https://player.vimeo.com/video/117733677" title="Accident Reconstruction — litigation animation by David A. Johnson" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <p class="caption">Accident Reconstruction · 3D litigation animation by <a href="https://www.davidajohnson.nyc/" rel="author">David A. Johnson</a> — more case work: patent-dispute machine animation, environmental contamination, industrial failure analysis.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>What we handle</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Hot Seat Operation</h3>
+          <p>A trial technician beside your team for hearings and trial: exhibit call-ups, side-by-side documents, real-time highlighting, video designations — the moment you ask.</p>
+        </div>
+        <div class="card">
+          <h3>Litigation Animation</h3>
+          <p>Accident reconstructions, patent and machine animations, environmental and medical visuals — built frame-by-frame from the record: depositions, photos, maps, and expert input.</p>
+        </div>
+        <div class="card">
+          <h3>3D Exhibits & Demonstratives</h3>
+          <p>Technical subjects made visible for a non-technical jury. Three decades of VFX, 3D, and technical animation experience behind every exhibit.</p>
+        </div>
+        <div class="card">
+          <h3>Deposition Video & Prep</h3>
+          <p>Designation cutting, sync, and playback that lands on the right line every time — plus war-room support in the run-up to trial.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="wrap">
+      <h2>Questions legal teams ask</h2>
+      <details>
+        <summary>What does a hot seat operator actually do during trial?</summary>
+        <p>They sit with counsel and drive the courtroom technology in real time — pulling up exhibits on request, highlighting testimony, playing synced deposition video, and cueing demonstratives so the examination never loses momentum in front of the jury.</p>
+      </details>
+      <details>
+        <summary>Why use animation instead of talking a jury through it?</summary>
+        <p>Jurors retain visuals dramatically better than verbal description. One accurate animation of how the machine rotated, how the vehicle traveled, or how the contamination spread replaces an hour of confusing testimony — and stays in the jury room memory.</p>
+      </details>
+      <details>
+        <summary>Will the animation survive an admissibility challenge?</summary>
+        <p>Demonstratives are routinely admitted when they fairly and accurately illustrate evidence already in the record. That's why every frame is grounded in depositions, photographs, maps, and expert opinion — accuracy and a defensible basis are the whole design brief.</p>
+      </details>
+      <details>
+        <summary>When should we bring you in?</summary>
+        <p>When exhibit lists and the pretrial order start taking shape. Visuals built weeks out survive objections better and cost less than rush work the weekend before openings.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Put us in the hot seat</h2>
+      <p>Tell us about the case — what the jury needs to understand, and when you're on the calendar. We'll tell you exactly what it takes to make it clear.</p>
+      <a class="btn btn-primary" href="https://www.davidajohnson.nyc/#contact">Start a Conversation</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Hotseat · New York City</span>
+    <span>Visual evidence by <a href="https://www.davidajohnson.nyc/" rel="author">David A. Johnson</a></span>
+  </div>
+</footer>
+
 </body>
 </html>
