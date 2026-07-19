@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Litigation Animation Examples — Trial Presentation Case Studies | Hotseat</title>
+<meta name="description" content="Three litigation animation examples and trial presentation case studies: accident reconstruction, patent-dispute machine animation, and environmental contamination — built from the record for New York City legal teams." />
+<link rel="canonical" href="https://kyanabeckles.github.io/hotseat-website/work.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Litigation Animation Examples — Trial Presentation Case Studies | Hotseat" />
+<meta property="og:description" content="Accident reconstruction, patent-dispute machine animation, and environmental contamination — three litigation animations built from the record and explained for the courtroom." />
+<meta property="og:url" content="https://kyanabeckles.github.io/hotseat-website/work.html" />
+<meta property="og:image" content="https://i.vimeocdn.com/video/501109841_640.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "VideoObject",
+      "name": "Accident Reconstruction — Litigation Animation",
+      "description": "3D litigation animation of a vehicle accident outside a Florida beachside nightclub, synthesizing witness depositions, an overhead map, Google Street View imagery, and client photographs into one coherent visual narrative for jurors.",
+      "embedUrl": "https://player.vimeo.com/video/117733677",
+      "author": { "@type": "Person", "name": "David A. Johnson" }
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Formax Patty Machine — Patent Dispute Animation",
+      "description": "Working 3D animation built for a patent dispute, showing how the Formax machine's rotating-arm mechanism operated compared to a competing design, built for clarity, timing, and accuracy for a non-technical judge and jury.",
+      "embedUrl": "https://player.vimeo.com/video/114108565",
+      "author": { "@type": "Person", "name": "David A. Johnson" }
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Ground Contamination — Environmental Litigation Visualization",
+      "description": "Environmental litigation visualization for a refinery case on St. Croix, showing underground contamination, well installation, and remediation for courtroom explanation.",
+      "embedUrl": "https://player.vimeo.com/video/118298713",
+      "author": { "@type": "Person", "name": "David A. Johnson" }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #0d0d0f;
+    --panel: #16161a;
+    --ink: #f5f2ee;
+    --muted: #b9b2ab;
+    --dim: #6e675f;
+    --ember: #ff7a3c;
+    --ember-deep: #ff3d14;
+    --line: #26262c;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; line-height: 1.65; }
+  h1, h2, h3, .display { font-family: 'Archivo Black', system-ui, sans-serif; letter-spacing: -.01em; }
+  a { color: var(--ember); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+
+  header.site { padding: 20px 0; border-bottom: 1px solid var(--line); }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: 'Archivo Black'; font-size: 1.15rem; text-transform: uppercase; }
+  .brand span { color: var(--ember); }
+  .nav-links { display: flex; align-items: center; gap: 22px; }
+  .nav-links a.back { color: var(--muted); text-decoration: none; font-weight: 600; font-size: .92rem; }
+  .nav-links a.back:hover { color: var(--ember); }
+  .nav-cta { background: var(--ember-deep); color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 8px; font-weight: 600; font-size: .9rem; }
+  .nav-cta:hover { background: #d63210; }
+
+  .page-hero { padding: 64px 0 40px; position: relative; overflow: hidden; }
+  .page-hero .glow { position: absolute; bottom: -60%; left: 50%; transform: translateX(-50%); width: 120%; height: 100%; background: radial-gradient(ellipse at center, rgba(255,90,20,.22), transparent 65%); pointer-events: none; }
+  .kicker { color: var(--ember); text-transform: uppercase; letter-spacing: .2em; font-size: .78rem; font-weight: 600; margin-bottom: 14px; }
+  .page-hero h1 { font-size: clamp(2rem, 5.4vw, 3.2rem); line-height: 1.08; text-transform: uppercase; max-width: 20ch; }
+  .page-hero p.lede { margin-top: 20px; font-size: 1.1rem; color: var(--muted); max-width: 60ch; }
+
+  .case { padding: 56px 0; border-top: 1px solid var(--line); }
+  .case h2 { font-size: clamp(1.4rem, 3.2vw, 1.9rem); text-transform: uppercase; margin-bottom: 22px; }
+
+  .video-frame { position: relative; padding-top: 56.25%; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: #000; }
+  .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+  .case-body { margin-top: 24px; max-width: 72ch; }
+  .case-body p { color: var(--muted); margin-bottom: 14px; }
+  .case-body p:last-of-type { margin-bottom: 0; }
+  .tools { margin-top: 18px; font-size: .86rem; color: var(--dim); }
+  .tools strong { color: var(--muted); font-weight: 600; }
+
+  .contact { text-align: center; background: var(--panel); border-top: 1px solid var(--line); padding: 64px 0; }
+  .contact p { color: var(--muted); max-width: 52ch; margin: 0 auto 26px; }
+  .btn { display: inline-block; text-decoration: none; font-weight: 600; border-radius: 10px; padding: 14px 28px; }
+  .btn-primary { background: var(--ember-deep); color: #fff; }
+  .btn-primary:hover { background: #d63210; }
+
+  footer { padding: 28px 0; font-size: .82rem; color: var(--dim); border-top: 1px solid var(--line); }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--ember); }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="brand">Hot<span>seat</span></div>
+    <div class="nav-links">
+      <a class="back" href="index.html">&larr; Home</a>
+      <a class="nav-cta" href="https://www.davidajohnson.nyc/#contact">Discuss Your Case</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="glow" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="kicker">Litigation Animation Examples · Trial Presentation Case Studies</p>
+      <h1>Three cases. Three ways a jury needed to <em>see</em> it.</h1>
+      <p class="lede">Every animation below is built from the record — depositions, site data, and expert input — and rendered for the one audience that matters: jurors who've never seen the inside of a machine, an intersection, or a refinery before.</p>
+    </div>
+  </section>
+
+  <section class="case" id="accident-reconstruction">
+    <div class="wrap">
+      <h2>Accident Reconstruction</h2>
+      <div class="video-frame">
+        <iframe src="https://player.vimeo.com/video/117733677" title="Accident Reconstruction — litigation animation by David A. Johnson" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="case-body">
+        <p>The legal team had an accident outside a Florida beachside nightclub, told from every angle but one that actually explained it: witness depositions with conflicting recollections, an overhead map, Google Street View imagery, and a handful of client photographs — none of it, on its own, forming a ready-made visual story a jury could follow.</p>
+        <p>The animation rebuilt the scene in 3DS Max from that record, tying every account to a fixed point on the map so the geography stayed consistent no matter whose testimony was driving a given moment. V-Ray rendering and After Effects compositing turned the reconstruction into a single continuous sequence rather than a stitched-together set of exhibits.</p>
+        <p>In front of a jury, that consistency is the whole point: once viewers have one spatial reference for the location, every witness's account plugs into the same mental map instead of competing with it — which is what lets a jury actually resolve conflicting testimony instead of getting lost in it.</p>
+        <p class="tools"><strong>Built with:</strong> 3DS Max, V-Ray, After Effects</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="case" id="formax-patty-machine">
+    <div class="wrap">
+      <h2>Formax Patty Machine</h2>
+      <div class="video-frame">
+        <iframe src="https://player.vimeo.com/video/114108565" title="Formax Patty Machine — patent dispute litigation animation by David A. Johnson" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="case-body">
+        <p>This was a patent dispute over how a machine actually worked. Formax needed to show a judge and jury with no mechanical background exactly how its patty machine's rotating-arm mechanism operated, and how that operation differed from a competing design — the kind of distinction that decides the case but is nearly impossible to convey in testimony alone.</p>
+        <p>The mechanism was modeled in Rhino3D for precision and brought into 3DS Max for animation, rendered in V-Ray, and finished in After Effects. Clarity, timing, and mechanical accuracy took priority over spectacle at every step — the arm had to move exactly as the real machine moved, at a pace a courtroom could follow.</p>
+        <p>The result is a working model a non-technical audience can watch and understand on one viewing: how the rotating arm cycles, what it does at each stage, and why that differs from the competing mechanism at the center of the dispute.</p>
+        <p class="tools"><strong>Built with:</strong> Rhino3D, 3DS Max, V-Ray, After Effects</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="case" id="ground-contamination">
+    <div class="wrap">
+      <h2>Ground Contamination</h2>
+      <div class="video-frame">
+        <iframe src="https://player.vimeo.com/video/118298713" title="Ground Contamination — environmental litigation animation by David A. Johnson" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="case-body">
+        <p>An environmental litigation matter involving a refinery on St. Croix needed to explain something that happens entirely underground and over time: how contamination spread beneath the site, where remediation wells were installed, and how the contaminated material was reduced as remediation proceeded.</p>
+        <p>The visualization was built from ArcGIS site data, LIDAR modeling, and well-placement records — grounding the underground scene in the same technical data the experts relied on, rather than an illustrator's approximation. 3DS Max handled the modeling, V-Ray the rendering, and After Effects the compositing that turned site data into a clear visual sequence.</p>
+        <p>For a courtroom, that matters because contamination and remediation are invisible processes by nature. Turning expert-grounded site data into something jurors can watch happen — spread, wells, reduction — is what makes an expert's technical opinion legible to people who will never see the site itself.</p>
+        <p class="tools"><strong>Built with:</strong> 3DS Max, V-Ray, After Effects (ArcGIS + LIDAR site data)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Have a case that needs this?</h2>
+      <p>Every animation above started as depositions, maps, and expert reports on someone's desk. Tell us what's on yours.</p>
+      <a class="btn btn-primary" href="https://www.davidajohnson.nyc/#contact">Discuss Your Case</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Hotseat · New York City</span>
+    <span>Visual evidence by <a href="https://www.davidajohnson.nyc/" rel="author">David A. Johnson</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
